@@ -1,183 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>John Moose</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Resumé for John Moose">
+  <title>Resume for John Moose</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="John Moose">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
-  <!-- Fav and touch icons -->
+  <meta name="description" content="The resume for John Moose, an enthusiastic software engineer with a diverse background, leadership experience, and a proven ability to tackle tough projects.">
+  <meta name="keywords" content="software engineer, lead engineer, resume, Ruby on Rails">
   <link rel="shortcut icon" href="ico/favicon.png">
-</head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:500%7CQuattrocento:400,700" rel="stylesheet">
+  <style>
+    body {
+      margin-bottom: 4em;
+      font-family: 'Quattrocento', sans-serif;
+      font-size: 12.5pt;
+    }
 
-<body>
-  <div class="stripe">
-    <div class="container">
-      <div class="masthead row">
-        <div class="contact col-sm-6 pull-right">
-          <a href="http://portfolio.mooserific.org" class="btn btn-lg">Portfolio</a>
-          <script type="text/javascript">
-          <!--
-          var name = "john";
-          var domain = "mooserific.org";
-          document.write('<a href=\"mailto:' + name + '@' + domain + '\" class=\"btn btn-lg\">');
-          document.write('Contact' + '</a>');
-          // -->
+    h1,
+    h2 {
+      font-family: 'Oswald', serif;
+      font-weight: 500;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      margin-top: 1em;
+    }
+
+    details summary {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    main {
+      margin-top: 40pt;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      margin-bottom: 0;
+      margin-top: 1.5em;
+      font-weight: bold;
+    }
+
+    h3:first-of-type {
+      margin-top: 0;
+    }
+
+    header {
+      background-color: rgb(115, 162, 200);
+      color: white;
+      padding-bottom: 40px;
+    }
+
+    header a,
+    header a:hover {
+      color: white;
+      padding-left: 1em;
+    }
+
+    header .lead {
+      max-width: 660px;
+      line-height: 1.2em;
+      font-weight: 400;
+    }
+
+    header nav {
+      text-align: right;
+      padding-bottom: 40px;
+    }
+
+    a {
+      color: rgb(115, 162, 200);
+    }
+
+    .container {
+      max-width: 930px;
+    }
+
+    .details {
+      color: #aaa;
+      font-weight: 400;
+      font-size: 1em;
+    }
+
+    .details a {
+      margin-right: 1em;
+    }
+
+    @media print {
+      header {
+        background-color: inherit;
+        color: black;
+        padding-bottom: 0;
+      }
+      p a {
+        word-wrap: break-word;
+      }
+      a,
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: black;
+        text-decoration: none;
+      }
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+      h2,
+      h3 {
+        page-break-after: avoid;
+      }
+      details {
+        page-break-inside: avoid;
+      }
+      @page {
+        margin: 2cm;
+      }
+      h1 {
+        margin-top: 1.5em;
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="d-print-none">
+          <a href="http://portfolio.mooserific.org">Portfolio</a>
+          <script>
+            <!--
+            var name = "john";
+            var domain = "mooserific.org";
+            document.write('<a href=\"mailto:' + name + '@' + domain + '\">');
+            document.write('Contact' + '</a>');
+            // -->
           </script>
-          <div class="print-links visible-print">
-            <a href="http://forhire.mooserific.org">forhire.mooserific.org</a>
-            <a href="http://portfolio.mooserific.org">portfolio.mooserific.org</a>
-            <a href="mailto:john@mooserific.org">john@mooserific.org</a>
+        </div>
+        <div class="d-none d-print-block">
+          <a href="http://forhire.mooserific.org">forhire.mooserific.org</a>
+          <a href="http://portfolio.mooserific.org">portfolio.mooserific.org</a>
+          <a href="mailto:john@mooserific.org">john@mooserific.org</a>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1 id="john-moose">John Moose</h1>
+        <p class="lead">An enthusiastic software engineer with a diverse background, leadership experience, and a proven ability to tackle tough projects.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2 id="summary">Summary</h2>
+        <div class="row">
+          <div class="col-sm">
+            <details open>
+              <summary>Development Skills</summary>
+              <p>I enjoy writing tools that make complex processes simple. I’ve worked on everything from complex lending-as-a-service platforms to digital asset management tools and marketing sites.</p>
+            </details>
+            <details open>
+              <summary>Flexibility</summary>
+              <p>I have experience in a variety of technologies: Ruby on Rails, Go, React, CSS, responsive design, iOS development, accessibility, rules engines, scoring models… I love to learn new things.</p>
+            </details>
+          </div>
+          <div class="col-sm">
+            <details open>
+              <summary>Clear Communication</summary>
+              <p>I know how to work within a scrum team, including other engineers, designers, product owners, and QA testers. I lead demos and communicate technical concepts in an easy-to-understand manner.</p>
+            </details>
+            <details open>
+              <summary>Design Experience</summary>
+              <p>I have 12 years of experience in a design and branding agency. I know how to work with designers and make apps that are easy-to-use, attractive, and on-brand.</p>
+            </details>
           </div>
         </div>
-        <h3 class="me col-sm-6 pull-left"><img src="img/portrait.jpg" alt="portrait">John Moose</h3>
-      </div>
-      <div class="row">
-        <div class="intro col-sm-12 col-md-6">
-          <h1><span class="part1 invisible">Development</span> <span class="part2 invisible"> + </span> <span class="part3 invisible">Design</span></h1>
-          <p class="lead invisible">I'm an agile full-stack software engineer with a design and branding background.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <section id="overview" class="row">
-      <div class="col-sm-6">
-        <h4>Development Skills</h4>
-        <p>I enjoy writing tools that make work easier. I&rsquo;ve worked on everything from full-featured digital asset management tools and marketing sites to complex lending-as-a-service platforms.</p>
-        <h4>Flexibility</h4>
-        <p>I&rsquo;m a software engineer with full-stack development experience. Ruby on Rails, React, CSS, responsive design, iOS development… I love to learn new things.</p>
-      </div>
-      <div class="col-sm-6">
-        <h4>Clear Communication</h4>
-        <p>I know how to work with a scrum team, including other engineers, designers, product owners, and QA testers. I lead demos and communicate technical concepts in an easy-to-understand manner.</p>
-        <h4>Agency Experience</h4>
-        <p>I have 12 years of experience in a design and branding agency. I know how to work with designers and make apps that are easy-to-use, attractive, and on-brand.</p>
-      </div>
-    </section>
-    <section id="experience" class="row">
-      <h3 class="col-sm-12">Experience</h3>
-      <div class="job col-sm-12">
-        <div class="job_title">
-          <h4>Software Engineer</h4>
-        </div>
-        <div class="job_location text-muted">
-          <a href="http://business.lendkey.com">LendKey</a> 2016-Present
-        </div>
-        <div class="job_summary">
-          I work with a talented team of engineers, subject-matter experts, and designers to create and maintain a large, high-traffic, and highly-scalable lending-as-a-service platform used by hundreds of credit unions and banks to enable over 30,000 consumers to save money on student, consolidation, and home improvement loans. I help to plan, design, implement, test, maintain, and support our development efforts. I have also gained invaluable experience working on an agile team.
-        </div>
-      </div>
-      <div class="job col-sm-12">
-        <div class="job_title">
-          <h4>Senior Applications Engineer</h4>
-        </div>
-        <div class="job_location text-muted">
-          <a href="http://ddb.com">DDB</a> 2014-2016
-        </div>
-        <div class="job_summary">
-          <em>I joined DDB, Interbrand&rsquo;s parent company, as part of an IT consolidation.</em> I used my agency experience to create websites and software tools optimized for that environment. I utilized modern technologies and techniques including <a href="http://rubyonrails.org">Ruby on Rails</a>, <a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a>, <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS3</a>, and <a href="http://alistapart.com/article/responsive-web-design">responsive design</a>. I created powerful, easy-to-use, and attractive <a href="http://portfolio.mooserific.org/">products</a>.
-        </div>
-      </div>
-      <div class="job col-sm-12">
-        <div class="job_title">
-          <h4>Independent Developer</h4>
-        </div>
-        <div class="job_location text-muted">
-          <a href="http://tinyairplane.com">Tiny Airplane</a> 2012-Present
-        </div>
-        <div class="job_summary">
-          I gained a good understanding of iOS development as I created and polished <a href="http://tinyairplane.com/pieces/">Pieces</a>, a jigsaw puzzle app available in the <a href="https://itunes.apple.com/us/app/pieces-simply-jigsaw-puzzles/id882251105?ls=1&amp;mt=8">App Store</a>. It has been downloaded by over 50,000 people. I also do freelance web development work.
-        </div>
-      </div>
-      <div class="job col-sm-12">
-        <div class="job_title">
-          <h4>IT Manager / Developer</h4>
-        </div>
-        <div class="job_location text-muted">
-          <a href="http://interbrand.com">Interbrand</a> 2008-2014
-        </div>
-        <div class="job_summary">
-          As the manager of a two-person IT department in a 100-employee design agency, I was responsible for every aspect of the office&rsquo;s technology. We maintained an excellent rapport with our co-workers and were seen as valued partners&mdash; I was twice presented with an employee of the year award by my peers. I also worked with Interbrand&rsquo;s IT leadership around the world to accomplish projects for the benefit of the entire company. In addition, I served as a software and web developer for our office, creating several widely-used tools including an internal web application capable of handling everything from vacation scheduling to inventory tracking, a digital asset management system which won a global Interbrand Best Work award, a variety of marketing websites, and lots of billable client work.
-        </div>
-      </div>
-      <div class="job col-sm-12">
-        <div class="job_title">
-          <h4>Network Administrator</h4>
-        </div>
-        <div class="job_location text-muted">
-          <a href="http://interbrand.com">Interbrand</a> 2004-2008
-        </div>
-        <div class="job_summary">
-          I administered and simplified a complicated server infrastructure while acting as second-tier desktop support. I also designed the technology infrastructure for a new office, from networking to audiovisual.
-        </div>
-      </div>
-      <div class="job col-sm-12">
-        <div class="job_title">
-          <h4>Network Applications Analyst</h4>
-        </div>
-        <div class="job_location text-muted">
-          <a href="http://miamioh.edu">Miami University</a> 2000-2004
-        </div>
-        <div class="job_summary">
-          I worked with teammates to analyze, design, and develop software including a university-wide account creation system and user management tools. I created web-based tools for both end-users and support staff. I took part in the evaluation and implementation teams for several critical university-wide projects (web portal, e-mail services, etc.) used by over 30,000 people. I received training from Apple in workstation management and I attended Apple&rsquo;s <a href="http://developer.apple.com/wwdc/">WWDC</a>.
-        </div>
-      </div>
-      <div class="job col-sm-12">
-        <div class="job_title">
-          <h4>Lead Mac OS Support</h4>
-        </div>
-        <div class="job_location text-muted">
-          <a href="http://miamioh.edu">Miami University</a> 1999-2000
-        </div>
-        <div class="job_summary">
-          I acted as lead Mac OS support person for Miami University. My responsibilities included planning, troubleshooting, training peers and end-users, writing documentation, evaluating new software, and developing software installers.
-        </div>
-      </div>
-      <div class="job col-sm-12">
-        <div class="job_title">
-          <h4>B.A. Microbiology</h4>
-        </div>
-        <div class="job_location text-muted">
-          <a href="http://miamioh.edu/">Miami University</a> 1999
-        </div>
-        <div class="job_summary">
-          I honed my problem-solving and research skills in a challenging academic environment. I was awarded the Microbiology Department&rsquo;s Senior Prize for a visualization of cellular apoptosis. I worked for the university IT organization performing desktop support and software development for all four years of my education.
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- /container -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script type="text/javascript">
-  $(window).load(function() {
-    window.setTimeout(function() {
-      $('.intro .part1').addClass('animated fadeInLeft').removeClass('invisible');
-    }, 500);
-    window.setTimeout(function() {
-      $('.intro .part3').addClass('animated fadeInLeft').removeClass('invisible');
-    }, 1000);
-    window.setTimeout(function() {
-      $('.intro .part2').addClass('animated fadeIn').removeClass('invisible');
-    }, 1500);
-    window.setTimeout(function() {
-      $('.intro .lead').addClass('animated fadeIn').removeClass('invisible');
-    }, 2000);
-  });
+      </section>
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      <section>
+        <h2 id="experience">Experience</h2>
+        <h3 id="lendkey-lead-engineer">Lead Engineer</h3>
+        <details open>
+          <summary class="details"><a href="http://lendkey.com">LendKey</a> <span class="date-range">2018</span></summary>
+          <p>In concert with a product owner, I led a “small and mighty” team made up of software engineers, a QA engineer, and a business analyst. With the company’s goal of “making lending simple” always in mind, I worked closely with LendKey’s leadership
+            and product team to plan, estimate, and implement new features, like easily-configurable credit risk analysis and loan decisioning. At the same time, I worked with my peers on other teams to plan and accomplish engineering and architectural
+            goals, like splitting a giant monolithic application into micro-services and selecting programming languages and frameworks. I served the other engineers on my team by removing barriers to their productivity and offering advice on both code
+            and career development. I led sprint ceremonies like scrums, demos, retrospectives, and refinement sessions.</p>
+        </details>
 
-  ga('create', 'UA-10042675-9', 'auto');
-  ga('send', 'pageview');
-  </script>
-</body>
+        <h3 id="lendkey-software-engineer">Software Engineer, Senior Software Engineer</h3>
+        <details open>
+          <summary class="details"><a href="http://lendkey.com">LendKey</a> <span class="date-range">2016–2018</span></summary>
+          <p>I worked with a talented team of engineers, subject-matter experts, and designers to create and maintain a large, high-traffic, and highly-scalable lending-as-a-service platform used by hundreds of credit unions and banks to enable over 30,000
+            consumers to save money on student, consolidation, and home improvement loans. I helped to support a very large and complicated codebase and was instrumental in implementing features like staged loan funding and a bureau-agnostic credit pulling
+            micro-service. I improved my Ruby on Rails skills, learned a lot about finance, and gained valuable experience working on a cross-functional agile team– doing everything from writing user stories to leading demos. As the number of engineers
+            grew, I led the effort to implement coding style and documentation standards and integrate their testing into our CI/CD pipeline.</p>
+        </details>
+
+        <h3 id="ddb-senior-applications-engineer">Senior Applications Engineer</h3>
+        <details open>
+          <summary class="details"><a href="http://ddb.com">DDB</a> <span class="date-range">2014–2016</span></summary>
+          <p>I joined DDB, Interbrand’s parent company, as part of an IT consolidation. I used my agency experience to create websites and software tools optimized for that environment. I utilized Ruby on Rails, HTML5, CSS3, and responsive design. I created
+            powerful, easy-to-use, and attractive <a href="http://portfolio.mooserific.org/">projects</a>, including digital asset managers, workflow tools, and marketing websites using Ruby on Rails.</p>
+        </details>
+
+        <h3 id="independent-developer">Independent Developer</h3>
+        <details open>
+          <summary class="details"><span class="date-range">2012–2017</span></summary>
+          <p>I gained a good understanding of iOS development as I created and polished Pieces, an elegant jigsaw puzzle app. It was downloaded by over 50,000 people.</p>
+        </details>
+
+        <h3 id="interbrand-it-manager-developer">IT Manager / Developer</h3>
+        <details open>
+          <summary class="details"><a href="https://www.interbrand.com">Interbrand</a> <span class="date-range">2008-2014</span></summary>
+          <p>As the manager of a two-person IT department for the Cincinnati office of an international design agency, I was responsible for every aspect of the office’s technology. I maintained an excellent rapport with my co-workers and was seen as a valued
+            partner— I was twice presented with an employee of the year award by my peers. I also worked with Interbrand’s IT leadership around the world to accomplish projects for the benefit of the entire company. In addition, I served as a software
+            and web developer for our office, creating several widely-used tools including an internal web application capable of handling everything from vacation scheduling to inventory tracking, a digital asset management system which won a global
+            Interbrand Best Work award, a variety of marketing websites and billable client projects.</p>
+        </details>
+
+        <h3 id="interbrand-network-administrator">Network Administrator</h3>
+        <details open>
+          <summary class="details"><a href="https://www.interbrand.com">Interbrand</a> <span class="date-range">2004-2008</span></summary>
+          <p>I simplified a complicated server infrastructure. I also designed the technology infrastructure for a new office, from networking to audiovisual.</p>
+        </details>
+
+        <h3 id="miami-university-network-applications-analyst">Network Applications Analyst</h3>
+        <details open>
+          <summary class="details"><a href="http://miamioh.edu">Miami University</a> <span class="date-range">2000-2004</span></summary>
+          <p>I worked with teammates to analyze, design, and develop software including a university-wide account creation system. I created web-based tools for both end-users and support staff. I took part in the evaluation and implementation teams for
+            several critical university-wide projects (web portal, directory services, courseware, etc.) used by over 30,000 people.</p>
+        </details>
+
+        <h3 id="miami-university-lead-mac-os-support">Lead Mac OS Support Analyst</h3>
+        <details open>
+          <summary class="details"><a href="http://miamioh.edu">Miami University</a> <span class="date-range">1999-2000</span></summary>
+          <p>I acted as lead Mac OS support person for Miami University. My responsibilities included planning, troubleshooting, training peers and end-users, writing documentation, evaluating new software, and developing software installers.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2 id="education">Education</h2>
+        <h3 id="miami-university-b-a-microbiology">B.A. Microbiology</h3>
+        <details open>
+          <summary class="details"><a href="http://miamioh.edu">Miami University</a> <span class="date-range">1999</span></summary>
+          <p>I honed my problem-solving and research skills in a challenging academic environment. I was awarded the Microbiology Department’s Senior Prize for a visualization of cellular apoptosis. I worked for the university IT organization performing
+            desktop support and software development for all four years of my education.</p>
+        </details>
+      </section>
+    </main>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-10042675-9', 'auto');
+      ga('send', 'pageview');
+    </script>
+    </script>
+  </body>
 
 </html>
