@@ -1,3 +1,3 @@
 # Resume for John Moose
 My resume.
-https://jmooserific.github.io/resume/
+http://forhire.mooserific.org
