@@ -1,3 +1,3 @@
 # Resume for John Moose
 My resume.
-http://resume.mooserific.org
+https://resume.mooserific.org
