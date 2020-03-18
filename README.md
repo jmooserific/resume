@@ -1,3 +1,5 @@
 # Resume for John Moose
-My resume.
+
 https://resume.mooserific.org
+
+Thanks for looking! 👍
