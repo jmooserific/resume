@@ -13,9 +13,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <style>
     @import url('https://rsms.me/inter/inter.css');
-    html { font-family: 'Inter', sans-serif; }
+
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+
     @supports (font-variation-settings: normal) {
-      html { font-family: 'Inter var', sans-serif; }
+      html {
+        font-family: 'Inter var', sans-serif;
+      }
     }
 
     body {
@@ -46,6 +52,10 @@
       letter-spacing: -0.021em;
       line-height: 42px;
       margin-top: 1em;
+    }
+
+    details {
+      padding-bottom: 1em;
     }
 
     details summary {
@@ -111,6 +121,10 @@
       text-decoration: underline;
     }
 
+    p {
+      margin-bottom: 0;
+    }
+
     .container {
       max-width: 720px;
     }
@@ -135,9 +149,11 @@
         color: black;
         padding-bottom: 0;
       }
+
       p a {
         word-wrap: break-word;
       }
+
       a,
       a:link,
       a:visited,
@@ -146,149 +162,176 @@
         color: black;
         text-decoration: none;
       }
+
       details summary::-webkit-details-marker {
         display: none;
       }
+
       h2,
       h3 {
         page-break-after: avoid;
       }
+
       details {
         page-break-inside: avoid;
       }
+
       @page {
         margin: 2cm;
       }
+
       h1 {
         margin-top: 3em;
       }
     }
   </style>
 
-  <body>
-    <header>
-      <nav class="container">
-        <div class="d-print-none">
-          <script>
-            <!--
-            var name = "john";
-            var domain = "mooserific.org";
-            document.write('<a href=\"mailto:' + name + '@' + domain + '\">');
-            document.write('Contact' + '</a>');
-            // -->
-          </script>
-        </div>
-        <div class="d-none d-print-block">
-          <a href="https://resume.mooserific.org">resume.mooserific.org</a>
-          <a href="mailto:john@mooserific.org">john@mooserific.org</a>
-        </div>
-      </nav>
+<body>
+  <header>
+    <nav class="container">
+      <div class="d-print-none">
+        <script>
+          <!--
+          var name = "john";
+          var domain = "mooserific.org";
+          document.write('<a href=\"mailto:' + name + '@' + domain + '\">');
+          document.write('Contact' + '</a>');
+          //
+          -->
+        </script>
+      </div>
+      <div class="d-none d-print-block">
+        <a href="https://resume.mooserific.org">resume.mooserific.org</a>
+        <a href="mailto:john@mooserific.org">john@mooserific.org</a>
+      </div>
+    </nav>
 
-      <div class="container">
-        <h1 id="john-moose">John Moose</h1>
-        <div class="row">
-          <p class="lead col-sm-6">An enthusiastic and friendly engineer who can communicate, lead, and solve tough problems.</p>
+    <div class="container">
+      <h1 id="john-moose">John Moose</h1>
+      <div class="row">
+        <p class="lead col-sm-6">An enthusiastic and friendly engineer who can communicate, lead, and solve tough problems.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2 id="summary">Key Skills</h2>
+      <div class="row">
+        <div class="col-sm">
+          <details open>
+            <summary>Development</summary>
+            <p>I write code that is easy-to-understand, thoroughly tested, and ready to grow. I strive to ship quickly, then iterate with my customers.</p>
+          </details>
+          <details open>
+            <summary>Flexibility</summary>
+            <p>My technical skillset includes: React (Typescript, Redux, Saga), Ruby on Rails, APIs (with documentation!), predictive models, CSS, responsive design, and accessibility. I love good design and learning something new.</p>
+          </details>
+        </div>
+        <div class="col-sm">
+          <details open>
+            <summary>Leadership</summary>
+            <p>I work hard to foster a kind and supportive environment where everyone can contribute and grow. I’ve “worn many hats” and have led cross-functional teams that have delivered great products.</p>
+          </details>
+          <details open>
+            <summary>Communication</summary>
+            <p>I <strong>love</strong> to demo and can communicate technical concepts and advice in language that my audience understands. I make sure that everyone knows exactly what we’re delivering and its value.</p>
+          </details>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main class="container">
-      <section>
-        <h2 id="summary">Key Skills</h2>
-        <div class="row">
-          <div class="col-sm">
-            <details open>
-              <summary>Development</summary>
-              <p>I write code that is easy-to-understand, thoroughly tested, and ready to grow. I strive to ship quickly, then iterate with my customers.</p>
-            </details>
-            <details open>
-              <summary>Flexibility</summary>
-              <p>My technical skillset includes: React (Typescript, Redux, Saga), Ruby on Rails, APIs (with documentation!), predictive models, CSS, responsive design, and accessibility. I love good design and learning something new.</p>
-            </details>
-          </div>
-          <div class="col-sm">
-            <details open>
-              <summary>Leadership</summary>
-              <p>I work hard to foster a kind and supportive environment where everyone can contribute and grow. I’ve “worn many hats” and have led cross-functional teams that have delivered great products.</p>
-            </details>
-            <details open>
-              <summary>Communication</summary>
-              <p>I <strong>love</strong> to demo and can communicate technical concepts and advice in language that my audience understands. I make sure that everyone knows exactly what we’re delivering and its value.</p>
-            </details>
-          </div>
-        </div>
-      </section>
+    <section>
+      <h2 id="experience">Experience</h2>
 
-      <section>
-        <h2 id="experience">Experience</h2>
-        <h3 id="lendkey-manager-frontend-engineering">Manager Frontend Engineering</h3>
-        <details open>
-          <summary class="details"><a href="http://lendkey.com">LendKey</a> <span class="date-range">2020–present</span></summary>
-          <p>I campaigned for and established LendKey’s frontend engineering team. I developed LendKey’s first modern single page apps, using React, Typescript, and Redux. In partnership with our UX director, I implemented a library of reusable user interface components, browsable in Storybook, that will greatly reduce the cost of future UI changes. I managed and mentored two junior frontend engineers.</p>
-        </details>
+      <details open>
+        <summary class="details">
+          <h3 id="lendkey-manager-frontend-engineering">Manager Frontend Engineering</h3><a href="http://lendkey.com">LendKey</a> <span class="date-range">2020–present</span>
+        </summary>
+        <p>I campaigned for and established LendKey’s frontend engineering team. I developed LendKey’s first modern single page apps, using React, Typescript, and Redux. In partnership with our UX director, I implemented a library of reusable user
+          interface components, browsable in Storybook, that will greatly reduce the cost of future UI changes. I managed and mentored two junior frontend engineers.</p>
+      </details>
 
-        <h3 id="lendkey-lead-engineer">Lead Engineer</h3>
-        <details open>
-          <summary class="details"><a href="http://lendkey.com">LendKey</a> <span class="date-range">2018–2020</span></summary>
-          <p>I led “small and mighty” teams made up of software engineers, QA engineers, and product owners. With LendKey’s goal of “improving lives with lending made simple” always in mind, I worked closely with the leadership and product
-            teams to plan, estimate, design, implement, and deploy new features and products. For example, I led the team that implemented a highly-flexible API to evaluate predictive models that has been used to decision and price millions of dollars worth of loans. At the same time, I worked towards company-wide engineering and architectural goals
-            by helping split a monolithic application into micro-services and select new languages and frameworks. I led sprint ceremonies like daily standups, demos, retrospectives, and refinement sessions. I demoed to the board of directors and wrote <a href="https://medium.com/lendgineering/building-flexible-credit-decisioning-for-an-expanded-credit-box-54dc626914b4">blog posts</a> about out work.</p>
-        </details>
+      <details open>
+        <summary class="details">
+          <h3 id="lendkey-lead-engineer">Lead Engineer</h3><a href="http://lendkey.com">LendKey</a><span class="date-range">2018–2020</span>
+        </summary>
+        <p>I led “small and mighty” teams made up of software engineers, QA engineers, and product owners. With LendKey’s goal of “improving lives with lending made simple” always in mind, I worked closely with the leadership and product
+          teams to plan, estimate, design, implement, and deploy new features and products. For example, I led the team that implemented a highly-flexible API to evaluate predictive models that has been used to decision and price millions of dollars
+          worth of loans. At the same time, I worked towards company-wide engineering and architectural goals
+          by helping split a monolithic application into micro-services and select new languages and frameworks. I led sprint ceremonies like daily standups, demos, retrospectives, and refinement sessions. I demoed to the board of directors and wrote
+          <a href="https://medium.com/lendgineering/building-flexible-credit-decisioning-for-an-expanded-credit-box-54dc626914b4">blog posts</a> about out work.</p>
+      </details>
 
-        <h3 id="lendkey-software-engineer">Software Engineer, Senior Software Engineer</h3>
-        <details open>
-          <summary class="details"><a href="http://lendkey.com">LendKey</a> <span class="date-range">2016–2018</span></summary>
-          <p>I worked with a talented team of engineers and subject-matter experts to create and maintain a massive lending-as-a-service platform used by hundreds of credit unions and banks to enable over 30,000
-            consumers to save money on student, consolidation, and home improvement loans. I was instrumental in implementing features like staged loan funding and a bureau-agnostic credit pulling
-            micro-service. I improved my Ruby on Rails skills, learned a lot about the fintech world, and gained valuable experience working on a cross-functional agile team– doing everything from writing user stories to leading demos. As the number of engineers
-            grew, I led the effort to implement test coverage, style, and documentation standards and integrate them into our CI/CD pipeline.</p>
-        </details>
+      <details open>
+        <summary class="details">
+          <h3 id="lendkey-software-engineer">Software Engineer, Senior Software Engineer</h3><a href="http://lendkey.com">LendKey</a> <span class="date-range">2016–2018</span>
+        </summary>
+        <p>I worked with a talented team of engineers and subject-matter experts to create and maintain a massive lending-as-a-service platform used by hundreds of credit unions and banks to enable over 30,000
+          consumers to save money on student, consolidation, and home improvement loans. I was instrumental in implementing features like staged loan funding and a bureau-agnostic credit pulling
+          micro-service. I improved my Ruby on Rails skills, learned a lot about the fintech world, and gained valuable experience working on a cross-functional agile team– doing everything from writing user stories to leading demos. As the number of
+          engineers
+          grew, I led the effort to implement test coverage, style, and documentation standards and integrate them into our CI/CD pipeline.</p>
+      </details>
 
-        <h3 id="ddb-senior-applications-engineer">Senior Applications Engineer</h3>
-        <details open>
-          <summary class="details"><a href="http://ddb.com">DDB</a> <span class="date-range">2014–2016</span></summary>
-          <p>I joined DDB, Interbrand’s parent company, as part of an IT consolidation. I used my agency experience to create websites and software tools optimized for that environment. I utilized Ruby on Rails, HTML5, CSS3, and responsive design. I created
-            powerful, easy-to-use, and on-brand <a href="http://portfolio.mooserific.org/">projects</a>, including digital asset managers, workflow tools, and marketing websites using Ruby on Rails.</p>
-        </details>
+      <details open>
+        <summary class="details">
+          <h3 id="ddb-senior-applications-engineer">Senior Applications Engineer</h3><a href="http://ddb.com">DDB</a> <span class="date-range">2014–2016</span>
+        </summary>
+        <p>I joined DDB, Interbrand’s parent company, as part of an IT consolidation. I used my agency experience to create websites and software tools optimized for that environment. I utilized Ruby on Rails, HTML5, CSS3, and responsive design. I
+          created
+          powerful, easy-to-use, and on-brand <a href="http://portfolio.mooserific.org/">projects</a>, including digital asset managers, workflow tools, and marketing websites using Ruby on Rails.</p>
+      </details>
 
-        <h3 id="interbrand-it-manager-developer">IT Manager / Developer</h3>
-        <details open>
-          <summary class="details"><a href="https://www.interbrand.com">Interbrand</a> <span class="date-range">2008-2014</span></summary>
-          <p>As the manager of a two-person IT department for the Cincinnati office of an international design agency, I was responsible for every aspect of the office’s technology. I maintained an excellent rapport with my co-workers and was seen as a valued
-            partner— I was twice presented with an employee of the year award by my peers. I also worked with Interbrand’s IT leadership around the world to accomplish projects for the benefit of the entire company. In addition, I served as a software
-            and web developer for our office, creating several widely-used tools including an internal web application capable of handling everything from vacation scheduling to inventory tracking, a digital asset management system which won a global
-            Interbrand Best Work award, a variety of marketing websites and billable client projects.</p>
-        </details>
+      <details open>
+        <summary class="details">
+          <h3 id="interbrand-it-manager-developer">IT Manager / Developer</h3><a href="https://www.interbrand.com">Interbrand</a> <span class="date-range">2008-2014</span>
+        </summary>
+        <p>As the manager of a two-person IT department for the Cincinnati office of an international design agency, I was responsible for every aspect of the office’s technology. I maintained an excellent rapport with my co-workers and was seen as a
+          valued
+          partner— I was twice presented with an employee of the year award by my peers. I also worked with Interbrand’s IT leadership around the world to accomplish projects for the benefit of the entire company. In addition, I served as a software
+          and web developer for our office, creating several widely-used tools including an internal web application capable of handling everything from vacation scheduling to inventory tracking, a digital asset management system which won a global
+          Interbrand Best Work award, a variety of marketing websites and billable client projects.</p>
+      </details>
 
-        <h3 id="interbrand-network-administrator">Network Administrator</h3>
-        <details open>
-          <summary class="details"><a href="https://www.interbrand.com">Interbrand</a> <span class="date-range">2004-2008</span></summary>
-          <p>I streamlined a complicated server and network environment. I also designed the technology infrastructure for a new office, from networking to audio-visual.</p>
-        </details>
+      <details open>
+        <summary class="details">
+          <h3 id="interbrand-network-administrator">Network Administrator</h3><a href="https://www.interbrand.com">Interbrand</a> <span class="date-range">2004-2008</span>
+        </summary>
+        <p>I streamlined a complicated server and network environment. I also designed the technology infrastructure for a new office, from networking to audio-visual.</p>
+      </details>
 
-        <h3 id="miami-university-network-applications-analyst">Network Applications Analyst</h3>
-        <details open>
-          <summary class="details"><a href="http://miamioh.edu">Miami University</a> <span class="date-range">2000-2004</span></summary>
-          <p>I worked with teammates to analyze, design, and develop software including a university-wide account creation system. I created web-based tools for both end-users and support staff. I took part in the evaluation and implementation teams for
-            several critical university-wide projects (web portal, directory services, courseware, etc.) used by over 30,000 people.</p>
-        </details>
 
-        <h3 id="miami-university-lead-mac-os-support">Lead Mac OS Support Analyst</h3>
-        <details open>
-          <summary class="details"><a href="http://miamioh.edu">Miami University</a> <span class="date-range">1999-2000</span></summary>
-          <p>I acted as lead Mac OS support person for Miami University. My responsibilities included planning, troubleshooting, training peers and end-users, writing documentation, evaluating new software, and developing software installers.</p>
-        </details>
-      </section>
+      <details open>
+        <summary class="details">
+          <h3 id="miami-university-network-applications-analyst">Network Applications Analyst</h3><a href="http://miamioh.edu">Miami University</a> <span class="date-range">2000-2004</span>
+        </summary>
+        <p>I worked with teammates to analyze, design, and develop software including a university-wide account creation system. I created web-based tools for both end-users and support staff. I took part in the evaluation and implementation teams
+          for
+          several critical university-wide projects (web portal, directory services, courseware, etc.) used by over 30,000 people.</p>
+      </details>
 
-      <section>
-        <h2 id="education">Education</h2>
-        <h3 id="miami-university-b-a-microbiology">B.A. Microbiology</h3>
-        <details open>
-          <summary class="details"><a href="http://miamioh.edu">Miami University</a> <span class="date-range">1999</span></summary>
-          <p>I honed my problem-solving and research skills in a challenging academic environment. I was awarded the Microbiology Department’s Senior Prize for a visualization of cellular apoptosis. I worked for the university IT organization performing
-            desktop support and software development for all four years of my education.</p>
-        </details>
-      </section>
-    </main>
-  </body>
+      <details open>
+        <summary class="details">
+          <h3 id="miami-university-lead-mac-os-support">Lead Mac OS Support Analyst</h3><a href="http://miamioh.edu">Miami University</a> <span class="date-range">1999-2000</span>
+        </summary>
+        <p>I acted as lead Mac OS support person for Miami University. My responsibilities included planning, troubleshooting, training peers and end-users, writing documentation, evaluating new software, and developing software installers.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2 id="education">Education</h2>
+
+      <details open>
+        <summary class="details">
+          <h3 id="miami-university-b-a-microbiology">B.A. Microbiology</h3><a href="http://miamioh.edu">Miami University</a> <span class="date-range">1999</span>
+        </summary>
+        <p>I honed my problem-solving and research skills in a challenging academic environment. I was awarded the Microbiology Department’s Senior Prize for a visualization of cellular apoptosis. I worked for the university IT organization
+          performing
+          desktop support and software development for all four years of my education.</p>
+      </details>
+    </section>
+  </main>
+</body>
+
 </html>
